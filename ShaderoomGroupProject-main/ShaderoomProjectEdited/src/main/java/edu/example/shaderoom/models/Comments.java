@@ -1,5 +1,7 @@
 package edu.example.shaderoom.models;
 
+import java.util.Date;
+
 public class Comments extends BaseComments{
 
     private User author;

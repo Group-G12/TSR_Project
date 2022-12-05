@@ -1,5 +1,9 @@
 package edu.example.shaderoom.models;
 
+import com.google.cloud.firestore.annotation.DocumentId;
+
+import java.io.File;
+
 public class User {
     @DocumentId
     private String id;
@@ -8,7 +12,7 @@ public class User {
     private String lastName;
     private String email;
     private String password;
-    private File image;
+//    private File image;
 
     public User()
     {
@@ -21,7 +25,7 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.image = image;
+//        this.image = image;
     }
 
     public String getId() {
@@ -71,12 +75,12 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public File getImage() {
-        return image;
-    }
-
-    public void setImage(File image) {
-        this.image = image;
-    }
+//
+//    public File getImage() {
+//        return image;
+//    }
+//
+//    public void setImage(File image) {
+//        this.image = image;
+//    }
 }
